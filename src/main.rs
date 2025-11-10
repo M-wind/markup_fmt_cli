@@ -20,7 +20,7 @@ const CLAP_STYLING: styling::Styles = styling::Styles::styled()
     about = "Configurable HTML, Vue, Svelte, Astro, Angular, Jinja, Twig, Nunjucks, Vento, Mustache and XML Formatter.\nDocumentation -- https://markup-fmt.netlify.app/"
 )]
 struct MarkupFmt {
-    /// Config path [OPTIONAL]
+    /// Config path
     #[clap(short, long)]
     config: Option<PathBuf>,
     #[clap(subcommand)]
